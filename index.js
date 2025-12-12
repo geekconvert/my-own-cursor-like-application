@@ -2,7 +2,7 @@ import { get } from "http";
 import { OpenAI } from "openai";
 import { exec } from "node:child_process";
 
-const OPENAPI_API_KEY = "add here your openai api key";
+const OPENAPI_API_KEY = "";
 
 const client = new OpenAI({
   apiKey: OPENAPI_API_KEY,
@@ -139,7 +139,7 @@ async function init() {
   ];
 
   const user_query =
-    "Create a small weather app in HTML, CSS and JS inside a weather_app folder. It must be working and city as a dropdown with Patiala, Delhi, Mohali, Chandigarh.";
+    "Create a age calculator app in HTML, CSS and JS inside a age_calculator folder. It must be working.";
 
   messages.push({ role: "user", content: user_query });
   while (true) {
